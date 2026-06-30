@@ -1,0 +1,12 @@
+{
+  "options": {
+    "single": {
+      "default": "Selecione uma opção",
+      "empty": "Sem opções"
+    },
+    "multiple": {
+      "default": "Selecione pelo menos uma opção",
+      "empty": "Sem opções"
+    }
+  }
+}

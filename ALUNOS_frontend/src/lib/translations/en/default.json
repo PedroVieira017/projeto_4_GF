@@ -1,0 +1,12 @@
+{
+    "title": "Welcome to SvelteKit",
+    "text": "Visit <a href=\"{{link}}\">kit.svelte.dev</a> to read the documentation",
+    "sso_erro_token": "An error occorred while verifying your login.",
+    "sso_erro_token_modificada": "An error occorred while verifying your login. The token may have been tampered with.",
+    "sso_erro_obter_dados": "An error occorred while getting user information.",
+    "sso_erro_desconhecido": "An unknown error occorred during your login.",
+    "valLoginSSO_titulo": "Automatic Sign In.",
+    "valLoginSSO_descricao": "If you are seeing this page, an error occurred while signing in.",
+    "valLoginSSO_maistarde": "Please, try again later.",
+    "dt_teste": "Showing page _PAGE_ of _PAGES_"
+}

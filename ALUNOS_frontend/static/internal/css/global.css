@@ -1,0 +1,124 @@
+:root {
+  --on-orange:   #F0AD4E;
+  --on-orange30: rgba(240, 173, 78, 0.3);
+  --on-blue:     #3071A9;
+  --on-blue50:   rgba(48, 113, 169,0.5);
+  --on-blue-zebra:   rgba(48, 113, 169,0.05);
+}
+
+.app-header.navbar .navbar-brand {
+    background-image: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--on-orange);
+    width: 155px;
+    height: auto;
+    border-bottom: 0px;
+}
+
+.app-footer {
+  font-size: 10px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+@media (max-width: 991px) {
+  /* .app-header.navbar .navbar-brand {
+    padding: 0.5rem 1rem;
+    left: inherit;
+    margin-left: 0;
+    text-align: left;
+  } */
+  .app-header.navbar .navbar-brand {
+    left: 125px;
+  }
+}
+
+/* DATA TABLES
+/* ================================================================================== */
+.pre-load {
+  display: none;
+}
+
+
+/* LOADING DOTS
+/* ================================================================================== */
+.pre-load {
+  display: none;
+}
+#loading-onGLOBAL {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -25%); */
+}
+#loading-onGLOBAL-level2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -25%); */
+}
+@media (max-width: 768px) {
+  #loading-onGLOBAL {
+    left: 47%;
+  }
+}
+span.dot-on, span.dot-on2, span.dot-on3 {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+  color: #20a8d8;
+  font-size: 72px;
+  font-weight: lighter;
+  line-height: 0px;
+  position: absolute;
+}
+span.dot-on2 {
+  -webkit-animation: mover 0.6s infinite  alternate;
+  animation: mover 0.6s infinite  alternate;
+  margin-left: 10px;
+}
+span.dot-on3 {
+  -webkit-animation: mover 0.8s infinite  alternate;
+  animation: mover 0.8s infinite  alternate;
+  margin-left: 20px;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px);
+  }
+}
+
+/*
+Update Maio.2020
+-----------------------------------------------
+Erasmus
+*/
+
+/* .row.checkboxs {
+  font-size: 0.6rem;
+  text-align: justify;
+}
+
+.row.checkboxs input {
+  margin-left: -15px
+}
+
+
+.row.checkboxs .popover-erasmus-info {
+  padding: 0px 3px;
+  border-radius: 0px;
+} */
+
+.cursor-pointer {
+    cursor:pointer;
+}

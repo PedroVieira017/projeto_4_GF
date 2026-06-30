@@ -1,0 +1,9 @@
+{
+    "dropdown": {
+        "titulo": "User",
+        "passwchange": "Password",
+        "pinchange": "PIN",
+        "terminarsessao": "Logout",
+        "menuvoltar": "Back to main dashboard"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "pt": {
+        "produto": {
+            "titulo_pagina": "Titulo pagina",
+            "objeto": "Objeto",
+            "modulo": "Modulo",
+            "titulo_pag": "Produto",
+            "a_carregar": "A carregar...",
+            "erro_carregar": "Erro a carregar a informação do produto"
+        }
+    }
+}

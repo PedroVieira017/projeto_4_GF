@@ -1,0 +1,10 @@
+{
+    "base": {
+        "modulo": "Módulo Exemplos",
+        "titulo": "Título da página base",
+        "objeto": "Objeto",
+        "descrição": "Texto descrição da página base para funcionalidades",
+        "recebido": "Recebido do servidor: ",
+        "btn_topo": "Adicionar linha estática na tabela"
+    }
+}

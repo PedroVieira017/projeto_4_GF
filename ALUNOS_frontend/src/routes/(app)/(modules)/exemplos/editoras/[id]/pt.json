@@ -1,0 +1,21 @@
+{
+    "exemplos_editoras_edit": {
+        "titulo_pagina": "Editar Editora",
+        "objeto": "Editar Editora",
+        "modulo": "Módulo Exemplos",
+        "form": {
+            "titulo": "Dados da Editora",
+            "nif": "NIF",
+            "placeholder_nif": "NIF da editora...",
+            "designacao": "Designação",
+            "placeholder_designacao": "Designação da Editora..."
+        },
+        "toastr": {
+            "erro": "Erro",
+            "sucesso": "Sucesso",
+            "form_erro": "Ocorreu um erro a criar a editora",
+            "form_sucesso": "Editora criada com sucesso"
+        }
+    }
+    
+}

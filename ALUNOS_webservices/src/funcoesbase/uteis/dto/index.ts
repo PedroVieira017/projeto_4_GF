@@ -1,0 +1,1 @@
+export * from './obter-objetos-utilizador.dto'

@@ -1,0 +1,26 @@
+span.dot-on {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    position: absolute;
+    
+    /* left: 123px; */
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+.title-manut-on {
+    font-size: 72px;
+    font-weight: lighter;
+    line-height: 80px;
+}

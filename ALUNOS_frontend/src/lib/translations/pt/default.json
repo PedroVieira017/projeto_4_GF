@@ -1,0 +1,12 @@
+{
+    "title": "Bem-vindo ao SvelteKit",
+    "text": "Visita <a href=\"{{link}}\">kit.svelte.dev</a>",
+    "sso_erro_token": "Ocorreu um erro a verificar o seu login.",
+    "sso_erro_token_modificada": "Ocorreu um erro a verificar o seu login. A token parece ter sido modificada.",
+    "sso_erro_obter_dados": "Ocorreu um erro ao obter a informação do utilizador.",
+    "sso_erro_desconhecido": "Ocorreu um erro desconhecido.",
+    "valLoginSSO_titulo": "Autenticação Automática.",
+    "valLoginSSO_descricao": "Se estiver a ver esta página, ocorreu um erro a realizar o seu login nesta aplicação.",
+    "valLoginSSO_maistarde": "Por favor, tente mais tarde.",
+    "dt_teste": "Mostar page _PAGE_ of _PAGES_"
+}

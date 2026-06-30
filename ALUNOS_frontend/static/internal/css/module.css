@@ -1,0 +1,228 @@
+/* FILTER BAR
+/* ================================================================================== */
+
+li.breadcrumb-item.breadcrumb-module-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #29363d;
+    text-transform: uppercase;
+    line-height: 21px;
+}
+
+li.breadcrumb-item.breadcrumb-module-title span.module-subtitle {
+    color: rgba(41, 54, 61, 0.5);
+}
+
+.div.breadcrumb-filter {
+    background-color: #f0f3f5;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.select2-container--bootstrap .select2-selection {
+    font-size: .6rem;
+}
+
+.select2-container--bootstrap .select2-selection--single {
+    height: auto;
+}
+
+.row.filter,
+#row-btn-filter-collapse {
+    border-bottom: 1px solid #c2cfd6;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.row.filter label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #8ad4ee;
+    margin-bottom: 0px;
+}
+
+.select2 option {
+    font-size: .6rem !important;
+}
+
+.separator-disc {
+    color: #8ad4ee;
+}
+
+.select2-container--bootstrap .select2-results__option,
+.teste {
+    font-size: 11px !important;
+}
+
+.filtro_datas{
+    font-size: .6rem;
+}
+
+/* DATA TABLES
+/* ================================================================================== */
+.row.tableresponsive {
+    margin-left: -30px;
+    margin-right: -30px;
+    font-size: 12px;
+}
+
+.row.tableresponsive .table-responsive,
+.row.tableresponsive .dataTables_wrapper {
+    width: 100%;
+}
+
+.row.tableresponsive .table-responsive,
+.row.tableresponsive .dataTables_wrapper,
+.row.tableresponsive .dataTables_scroll,
+.row.tableresponsive .dataTables_scrollBody {
+    overflow-x: hidden !important;
+}
+
+.datatable-on {
+    background-color: rgba(255,255,255,0.8);
+    width: 100% !important;
+    margin-right: 16px !important;
+}
+
+.datatable-on th {
+    font-size: 12px;
+    background-color: #20a8d8;
+    color: #FFF;
+}
+
+.datatable-on td {
+    font-size: 11px;
+}
+
+.datatable-on th.analitica {
+    font-size: 12px;
+    background-color: #20a8d8;
+    color: #FFF;
+    text-align: center !important;
+}
+
+.datatable-on td.analiticaValores {
+    font-size: 11px;
+    text-align: right !important;
+}
+
+.datatable-on td.analiticaCentro {
+    font-size: 11px;
+    text-align: center !important;
+}
+
+
+/* TEXT (Home)
+/* ================================================================================== */
+.text-module-name  {
+    font-size: 5rem;
+}
+
+@media (max-width: 1200px) {
+    .text-module-name  {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+
+.alert.alert-warning {
+    font-size: 1rem;
+}
+
+/* DATATABLE BUTTONS
+/* ================================================================================== */
+table#datatable-on .btn-sm {
+    padding: 0.2rem 0.20rem;
+    font-size: 0.76563rem;
+    line-height: 0.8;
+    min-width: 24px;
+}
+
+td.child span.dtr-title span.dt-button-label {
+    display: block !important;
+}
+
+table#datatable-on .badge {
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+/* FORMS
+/* ================================================================================== */
+.isinvalid {
+    height: 25px;
+    margin-top: -3px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.form-group label{
+    color: #20a8d8;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.form-group label > i{
+    color: #F00;
+    font-size: 5px;
+    padding: 4px;
+    position: absolute;
+}
+
+.btn-module-save, .btn-module-close, .btn-module-print, .btn-module-secondary-operation {
+    min-width: 142px;
+    float: right;
+}
+
+.select-module + .select2-container--bootstrap .select2-selection {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.select-module + .select2-container--bootstrap .select2-selection--single {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* .modal-full .modal-content {
+    min-height: 100vh;
+} */
+
+/* .modal-dialog { */
+/*    height: 90%; /* = 90% of the .modal-backdrop block = %90 of the screen */
+/* }
+.modal-content {
+    height: 100%; /* = 100% of the .modal-dialog block */
+/* } */
+
+/* TABLES
+/* ================================================================================== */
+.table-SIGES tr {
+    cursor: pointer;
+}
+
+/* TEXT
+/* ================================================================================== */
+.new-card-id {
+    letter-spacing: 3px;
+    font-size: 4em;
+}
+
+/* CARDS
+/* ================================================================================== */
+.card-header-upper {
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.novo_pedido .select2-selection--single{
+    font-size: .9rem !important;
+}
+.novo .select2-selection--single{
+    font-size: .9rem !important;
+}
+p.error{
+      color: #f86c6b;
+      font-size: 12px;
+      font-style: italic;
+}
+

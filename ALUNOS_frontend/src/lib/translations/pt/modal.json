@@ -1,0 +1,10 @@
+{
+  "actions": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "delete": "Apagar",
+    "yes": "Sim",
+    "no": "Não"
+  }
+}

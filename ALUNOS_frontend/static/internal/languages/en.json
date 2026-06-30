@@ -1,0 +1,201 @@
+{
+    "erros": {
+        "desconhecido": "Unidentified error. Contact the Department of Informatics.",
+        "sessao": {
+            "titulo": "Session status",
+            "1": "Session expired",
+            "2": "No session"
+        }
+    },
+    "forms": {
+        "obrigatorio": "Required field",
+        "emailInvalido": "Invalid e-mail",
+        "passDiferentes": "Passwords do not match",
+        "pinsDiferentes": "PINs do not match",
+        "placeHolderUtilizador": "Username",
+        "placeHolderPalavraPasse": "Password",
+        "placeHolderPalavraPasseConfirmacao": "Password confirmation",
+        "placeHolderEmail": "E-mail",
+        "placeHolderPIN": "PIN",
+        "placeHolderPINConfirmacao": "PIN Confirmation",
+        "btnLogin": "Sign In",
+        "btnChange": "Change",
+        "btnReset": "Reset",
+        "btnRegisto": "Sign Up",
+        "btnLoginLoading": "Processing...",
+        "btnChangeLoading": "Processing...",
+        "btnChangeSuccess": "Changed",
+        "linkEsqueceuPalavraPasse": "Forgot password?",
+        "linkNovaConta": "Create new account",
+        "tituloCriteriosPass": "PASSWORD REQUIREMENTS",
+        "criteriosPass": "<li><b>Length:</b> 9 (minimum) to 16 (maximum) characters.</li><li><b>Allowed characters:</b></li>(<code>a</code> ... <code>z</code>) (<code>A</code> ... <code>Z</code>) (<code>0</code> ... <code>9</code>) <code>!</code> <code>@</code> <code>#</code> <code>$</code> <code>&</code> <code>|</code> <code>.</code> <code>=</code> <code>+</code> <code>_</code> <code>-</code></li><li><b>Complexity:</b> at least one lowercase, one uppercase, one digit, and one special character.</li><li><b>Renewal period:</b> 180 days (it is not allowed to repeat any of the last 4).</li>",
+        "tituloPassAtual": "CURRENT PASSWORD",
+        "tituloPassNova": "NEW PASSWORD",
+        "erasmusRegistrationInfo": "<div>All personal data collected will be registered, used and protected by Instituto Politécnico de Viana do Castelo (IPVC), in accordance with the terms defined in the General Data Protection Regulation (GDPR) and in the regulations of Erasmus mobility programs and similar European Programs. Your personal data identified with (*) in this form, is necessary to complete your registration and will be used by IPVC to provide information to your institution of origin, for contacts, for following and monitoring the registration process under the Mobility Program.</div><div class='mt-2'>At any time, if you wish to review the option selected above, you can contact IPVC International Office using the email international@ipvc.pt.</div>"
+    },
+    "C07BFF1A-A9AD-4B22-9872-7002336E1C0E": {
+        "_NAME": "dash.php > Edição da palavra passe",
+        "pass_atual": "Password",
+        "pass_nova": "New password",
+        "pass_conf": "Password confirmation"
+    },
+    "B0513F67-7483-4E79-B5FA-C8DEBEEA6B59": {
+        "_NAME": "dash.php > Edição do PIN",
+        "pin": "PIN",
+        "pin_titulo": "NEW PIN"
+    },
+    "03F6F606-66A7-439D-B76B-B29D50F937E9": {
+        "_NAME": "index.php > Recuperação: Definição de nova palavra passe",
+        "pass_nova": "New password",
+        "pass_conf": "Password confirmation"
+    },
+    "D0614044-0726-4C06-9F04-0498DC5B78F2": {
+        "_NAME": "index.php > Registo (INTERNACIONAL)",
+        "email": "E-mail",
+        "pass_nova": "New password",
+        "pass_conf": "Password confirmation"
+    },
+    "index": {
+        "tituloAreaLogin": "Reserved access areas",
+        "tituloAreaPublica": "Public areas",
+        "btnON": "ON",
+        "btnInternacional": "International",
+        "btnRecrutamento": "Recruitment",
+        "btnReqPublicos": "Public Req.",
+        "btnSGGQ": "SG",
+        "btnCandidaturas": "Applications",
+        "btnPreCandidaturas": "Pre-applicat.",
+        "tituloFormON": "ON",
+        "subtituloFormON": "For staff or students only",
+        "tituloFormINTERNACIONAL": "INTERNATIONAL",
+        "subtituloFormINTERNACIONAL": "Sign in to Erasmus Application",
+        "subtituloFormINTERNACIONALReset": "Password reset",
+        "subtituloFormINTERNACIONALRegisto": "Registration to Erasmus Application",
+        "tituloFormRECRUTAMENTO": "RECRUITMENT",
+        "subtituloFormRECRUTAMENTO": "Sign in",
+        "subtituloFormRECRUTAMENTOReset": "Password reset",
+        "subtituloFormRECRUTAMENTORegisto": "Registration",
+        "tituloAutenticacao": "Authentication"
+    },
+    "dashboard": {
+        "tituloCredenciais": "Credentials update"
+    },
+    "menus": {
+        "tituloUtilizador": "User",
+        "palavraPasse": "Password",
+        "pin": "PIN",
+        "terminarSessao": "Logout"
+    },
+    "modals": {
+        "tituloPass": "User | Password",
+        "tituloPIN": "User | PIN",
+        "btnFechar": "Close",
+        "titleModalLogout": "Session Expired",
+        "textModalLogout": "Your session has expired! Please log in again.",
+        "btnTerminarSessao": "Login",
+        "titleErroDesconhecido": "Unknown problem",
+        "msgErroDesconhecido": "Unknown problem. Contact the platform management.",
+        "btnErroDesconhecido": "Login"
+    },
+    "postdata": {
+        "default": "Unknown problem. Contact the platform management.",
+        "interface_notset": "The data interface is not set! Contact the platform management.",
+        "interface_error": "Data interface error! Contact the platform management.",
+        "interface_empty": "The data interface is empty! Contact the platform management.",
+        "interface_fileds": "Fields are missing to comply with the interface! Contact the platform management.",
+        "identidade_post": "Your data does not need updating!",
+        "erro_obrigatorio": "The field [field] is required!",
+        "erro_nvarchar_size": "The field [field] exceeds the requested size!",
+        "erro_user_email": "The field [field] is not an email address!",
+        "erro_user_url": "The field [field] is not a valid URL!",
+        "erro_user_operador": "The field [field]  does not have a valid operator!",
+        "erro_user_lat": "The field [field] is not a valid latitude!",
+        "erro_user_lon": "The field [field] is not a valid longitude!",
+        "erro_user_pass": "The field [field] does not have a valid password!",
+        "erro_int": "The field [field] is not an integer!",
+        "erro_decimal": "The field [field] is not a decimal number!",
+        "erro_date": "The field [field] is not a valid date!",
+        "tampering_key": "Security error! The [field] field has a value out of context."
+    },
+    "login": {
+        "default": "Erro desconhecido! Contacto os Serviços de Informática (si@ipvc.pt)",
+        "parametro": "Erro de sistema! Parametros errados.",
+        "modulo": "Erro de sistema! Módulo errado."
+    },
+    "manutencao": {
+        "title": "We'll be back soon!",
+        "subtitle": "System in maintenance",
+        "p1": "The system is in maintenance mode and is not available at this time. Thank you for your understanding. If necessary you can contact us:",
+        "p2": "The normality of the service will be restored soon."
+    },
+    "browserincompativel": {
+        "title": "Incompatible browser",
+        "subtitle": "",
+        "p1": "The system does not support the browser version. <br/> If necessary, you can contact us:",
+        "p2": "<b>Supported browsers</b>: Chrome, Edge, Firefox, Opera and Safari"
+    },
+    "sidebar": {
+        "menu1": "Module",
+        "menu2.1": "Other",
+        "menu2.2": "Modules"
+    },
+    "loading": {
+        "sidebar": "Loading..."
+    },
+    "select": {
+        "option": "Select an item",
+        "todos": "All",
+        "todosF": "All",
+        "active": "Active",
+        "inactive": "Inactive",
+        "activecard": "With active card",
+        "woactivecard": "No active card",
+        "wocard": "Without card",
+        "analyzed": "Analyzed",
+        "notanalyzed": "Not analyzed",
+        "error": "Error",
+        "manually": "Manually executed",
+        "new": "New",
+        "pending": "Pending",
+        "processed": "Processed"
+    },
+    "calendarAbbrdays": {
+        "1": "Su",
+        "2": "Mo",
+        "3": "Tu",
+        "4": "We",
+        "5": "Th",
+        "6": "Fr",
+        "7": "Sa"
+    },
+    "calendarMonths": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+    },
+    "calendarButtons": {
+        "cancelLabel": "Cancel",
+        "applyLabel": "Apply"
+    },
+    "status": {
+        "1": "yes",
+        "0": "no"
+    },
+    "filter": {
+        "btnCollapseShow": "Show filter",
+        "btnCollapseHide": "Hide filter"
+    },
+    "calendarTime": {
+        "applyLabel": "Confirm",
+        "cancelLabel": "Cancel"
+    }
+}

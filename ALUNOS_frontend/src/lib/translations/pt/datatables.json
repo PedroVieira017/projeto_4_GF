@@ -1,0 +1,39 @@
+{
+    "sEmptyTable": "Nenhum registo encontrado",
+    "sInfo": "A mostrar de _START_ até _END_ de _TOTAL_ registos",
+    "sInfoEmpty": "A mostrar 0 até 0 de 0 registos",
+    "sInfoFiltered": "(Filtrados de _MAX_ registos)",
+    "sInfoPostFix": "",
+    "sInfoThousands": ".",
+    "sLengthMenu": "_MENU_ resultados por página",
+    "sLoadingRecords": "A carregar...",
+    "sProcessing": "A processar...",
+    "sZeroRecords": "Nenhum registo encontrado",
+    "sSearch": "Pesquisar",
+    "oPaginate": {
+        "sNext": "Próximo",
+        "sPrevious": "Anterior",
+        "sFirst": "Primeiro",
+        "sLast": "Último"
+    },
+    "oAria": {
+        "sSortAscending": ": Ordenar colunas de forma ascendente",
+        "sSortDescending": ": Ordenar colunas de forma descendente"
+    },
+    "buttons": {
+        "pageLength": {
+            "_" : "Mostrar %d registos",
+            "-1": "Mostrar tudo"
+        },
+        "pdf": "PDF",
+        "csv": "CSV",
+        "excel": "Excel",
+        "copy": "Copiar",
+        "colvis": "Alterar colunas",
+        "copyTitle": "Copiar linhas",
+        "copySuccess": {
+            "_": "%d linhas copiadas",
+            "1": "1 linha copiada"
+        }
+    }
+}

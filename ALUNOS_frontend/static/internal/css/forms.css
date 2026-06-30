@@ -1,0 +1,27 @@
+.field-icon {
+	float: right;
+	margin-left: -25px;
+	margin-top: 11px;
+	position: relative;
+	z-index: 20;
+	color: rgba(144, 153, 158, 0.5);
+	padding-right: 25px;
+	cursor: pointer;
+}
+
+.label-form {
+    font-size: 10px;
+}
+
+.isinvalid {
+    height: 25px;
+    margin-top: -3px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.erro {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #f86c6b;
+}

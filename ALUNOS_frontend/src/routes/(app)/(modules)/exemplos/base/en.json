@@ -1,0 +1,10 @@
+{
+    "base": {
+        "modulo": "Examples Module",
+        "titulo": "Base page title",
+        "objeto": "Objeto",
+        "descrição": "Base page description",
+        "recebido": "Recieved from server: ",
+        "btn_topo": "Add line to table"
+    }
+}

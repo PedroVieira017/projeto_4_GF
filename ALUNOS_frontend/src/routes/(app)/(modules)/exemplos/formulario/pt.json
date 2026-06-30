@@ -1,0 +1,15 @@
+{
+    "formulario": {
+        "modulo": "Módulo Base",
+        "titulo": "Base page title",
+        "objeto": "objeto",
+        "descrição": "Texto descrição da página base para funcionalidades",
+        "recebido": "Recebido do servidor: ",
+        "formulario": "Formulario",
+        "exemplo": "Exemplo",
+        "nome": "Nome",
+        "idade": "Idade",
+        "assunto": "Assunto",
+        "descricao_novo": "Descrição"
+    }
+}

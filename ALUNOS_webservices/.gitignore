@@ -1,0 +1,10 @@
+#.env
+/dist/
+/node_modules/
+/.env.production
+/.dockerignore
+#/.env
+#/uploads/
+#.env
+.DS_Store
+/.idea

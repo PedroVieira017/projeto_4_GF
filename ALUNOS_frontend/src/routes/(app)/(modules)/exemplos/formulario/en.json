@@ -1,0 +1,15 @@
+{
+    "base": {
+        "modulo": "Base Module",
+        "titulo": "Base page title",
+        "objeto": "objeto",
+        "descrição": "Base page description",
+        "recebido": "Recieved from server: ",
+        "formulario": "Form",
+        "exemplo": "Example",
+        "nome": "Name",
+        "idade": "Age",
+        "assunto": "Subject",
+        "descricao_novo": "Description"
+    }
+}

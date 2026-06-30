@@ -1,0 +1,12 @@
+.dt-body-center{
+    text-align: center;
+}
+.dt-center{
+    text-align: center;
+}
+
+#sem_dados {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+}

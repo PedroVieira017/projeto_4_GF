@@ -1,0 +1,201 @@
+{
+    "erros": {
+        "desconhecido": "Erro não identificado. Contacte os SI.",
+        "sessao": {
+            "titulo": "Estado da sessão",
+            "1": "Sessão de acesso ao Sistema expirada",
+            "2": "Sem sessão, de acesso ao Sistema, iniciada"
+        }
+    },
+    "forms": {
+        "obrigatorio": "Preenchimento obrigatório",
+        "emailInvalido": "Endereço de e-mail inválido",
+        "passDiferentes": "As palavras-passe não coincidem",
+        "pinsDiferentes": "Os PIN não coincidem",
+        "placeHolderUtilizador": "Utilizador",
+        "placeHolderPalavraPasse": "Palavra-passe",
+        "placeHolderPalavraPasseConfirmacao": "Confirmação da palavra-passe",
+        "placeHolderEmail": "E-mail",
+        "placeHolderPIN": "PIN",
+        "placeHolderPINConfirmacao": "Confirmação do PIN",
+        "btnLogin": "Entrar",
+        "btnChange": "Alterar",
+        "btnReset": "Recuperar",
+        "btnRegisto": "Criar conta",
+        "btnLoginLoading": "Em curso...",
+        "btnChangeLoading": "Em curso...",
+        "btnChangeSuccess": "Alterado",
+        "linkEsqueceuPalavraPasse": "Esqueceu a palavra-passe?",
+        "linkNovaConta": "Criar utilizador",
+        "tituloCriteriosPass": "Critérios de definição da palavra-passe",
+        "criteriosPass": "<li><b>Comprimento:</b> 9 (mínimo) e 16 (máximo) carateres.</li><li><b>Carateres permitidos:</b></li>(<code>a</code> ... <code>z</code>) (<code>A</code> ... <code>Z</code>) (<code>0</code> ... <code>9</code>) <code>!</code> <code>@</code> <code>#</code> <code>$</code> <code>&</code> <code>|</code> <code>.</code> <code>=</code> <code>+</code> <code>_</code> <code>-</code></li><li><b>Complexidade:</b> pelo menos uma minúscula, uma maiúscula, um dígito e um caráter especial.</li><li><b>Período de renovação:</b> 180 dias (sendo que não é permitida a repetição de qualquer uma das 4 últimas).</li>",
+        "tituloPassAtual": "PALAVRA-PASSE ATUAL",
+        "tituloPassNova": "NOVA PALAVRA-PASSE"
+    },
+    "C07BFF1A-A9AD-4B22-9872-7002336E1C0E": {
+        "_NAME": "dash.php > Edição da palavra passe",
+        "pass_atual": "Palavra-passe",
+        "pass_nova": "Nova palavra-passe",
+        "pass_conf": "Confirmação da palavra-passe"
+    },
+    "B0513F67-7483-4E79-B5FA-C8DEBEEA6B59": {
+        "_NAME": "dash.php > Edição do PIN",
+        "pin": "PIN",
+        "pin_titulo": "NOVO PIN"
+    },
+    "03F6F606-66A7-439D-B76B-B29D50F937E9": {
+        "_NAME": "index.php > Recuperação (INTERNACIONAL): Definição de nova palavra passe",
+        "pass_nova": "Nova palavra-passe",
+        "pass_conf": "Confirmação da palavra-passe"
+    },
+    "D0614044-0726-4C06-9F04-0498DC5B78F2": {
+        "_NAME": "index.php > Registo (INTERNACIONAL)",
+        "email": "Endereço de e-mail",
+        "pass_nova": "Nova palavra-passe",
+        "pass_conf": "Confirmação da palavra-passe"
+    },
+    "index": {
+        "tituloAreaLogin": "Áreas de acesso reservado",
+        "tituloAreaPublica": "Áreas públicas",
+        "btnON": "ON",
+        "btnInternacional": "Internacional",
+        "btnRecrutamento": "Recrutamento",
+        "btnReqPublicos": "Req. Públicos",
+        "btnSGGQ": "SG",
+        "btnCandidaturas": "Candidaturas",
+        "btnPreCandidaturas": "Pré-Candidat.",
+        "tituloFormON": "ON",
+        "subtituloFormON": "Apenas para colaboradores ou alunos",
+        "tituloFormINTERNACIONAL": "INTERNACIONAL",
+        "subtituloFormINTERNACIONAL": "Candidaturas Erasmus",
+        "subtituloFormINTERNACIONALReset": "Recuperação da palavra-passe",
+        "subtituloFormINTERNACIONALRegisto": "Registo de utilizador",
+        "tituloFormRECRUTAMENTO": "RECRUTAMENTO",
+        "subtituloFormRECRUTAMENTO": "Iniciar sessão",
+        "subtituloFormRECRUTAMENTOReset": "Recuperação da palavra-passe",
+        "subtituloFormRECRUTAMENTORegisto": "Registo de utilizador",
+        "tituloAutenticacao": "Autenticação"
+    },
+    "dashboard": {
+        "tituloCredenciais": "Edição de credenciais"
+    },
+    "menus": {
+        "tituloUtilizador": "Utilizador",
+        "palavraPasse": "Palavra-passe",
+        "pin": "PIN",
+        "terminarSessao": "Terminar sessão"
+    },
+    "modals": {
+        "tituloPass": "Utilizador | Palavra-passe",
+        "tituloPIN": "Utilizador | PIN",
+        "btnFechar": "Fechar",
+        "titleModalLogout": "Sessão Expirada",
+        "textModalLogout": "A sua sessão expirou! Por favor autentique-se novamente.",
+        "btnTerminarSessao": "Autenticar",
+        "titleErroDesconhecido": "Problema desconhecido",
+        "msgErroDesconhecido": "Problema desconhecido. Contacte a gestão da plataforma.",
+        "btnErroDesconhecido": "AUTENTICAR"
+    },
+    "postdata": {
+        "default": "Problema desconhecido. Contacte a gestão da plataforma.",
+        "interface_notset": "O interface de dados não está definido! Contacte a gestão da plataforma.",
+        "interface_error": "Erro de interface de dados! Contacte a gestão da plataforma.",
+        "interface_empty": "O interface de dados encontra-se vazio! Contacte a gestão da plataforma.",
+        "interface_fileds": "Faltam campos para cumprir o interface! Contacte a gestão da plataforma.",
+        "identidade_post": "Os seus dados não necessitam de atualização!",
+        "erro_obrigatorio": "O campo [field] é obrigatório!",
+        "erro_nvarchar_size": "O campo [field] ultrapassa o tamanho solicitado!",
+        "erro_user_email": "O campo [field] não é um endereço de correio eletrónico!",
+        "erro_user_url": "O campo [field] não é um URL válido!",
+        "erro_user_operador": "O campo [field] não tem um operador válido!",
+        "erro_user_lat": "O campo [field] não é uma latitude válida!",
+        "erro_user_lon": "O campo [field] não é uma latitude válida!",
+        "erro_user_pass": "O campo [field] não tem uma palavra-passe válida!",
+        "erro_int": "O campo [field] não é um número inteiro!",
+        "erro_decimal": "O campo [field] não é um número décimal!",
+        "erro_date": "O campo [field] não é uma data válida!",
+        "tampering_key": "Erro de segurança! O campo [field] tem um valor fora de contexto."
+    },
+    "login": {
+        "default": "Erro desconhecido! Contacto os Serviços de Informática (si@ipvc.pt)",
+        "parametro": "Erro de sistema! Parametros errados.",
+        "modulo": "Erro de sistema! Módulo errado."
+    },
+    "manutencao": {
+        "title": "Voltamos em breve!",
+        "subtitle": "Sistema em manutenção",
+        "p1": "O sistema encontra-se em modo de manutenção e não está disponível no momento. Obrigado pela sua compreensão. Se for necessário pode contactar-nos:",
+        "p2": "A normalidade do serviço será reposta em breve."
+    },
+    "browserincompativel": {
+        "title": "Browser incompatível",
+        "subtitle": "",
+        "p1": "O sistema não suporta a versão do browser.<br/>Se for necessário pode contactar-nos:",
+        "p2": "<b>Browsers suportados</b>: Chrome, Edge, Firefox, Opera e Safari"
+    },
+    "sidebar": {
+        "menu1": "Módulo",
+        "menu2.1": "Outros",
+        "menu2.2": "Módulos"
+    },
+    "loading": {
+        "sidebar": "A carregar conteúdo..."
+    },
+    "select": {
+        "option": "Selecione um elemento",
+        "todos": "Todos",
+        "todosF": "Todas",
+        "active": "Ativos",
+        "inactive": "Inativos",
+        "activecard": "Com cartão ativo",
+        "woactivecard": "Sem cartão ativo",
+        "wocard": "Sem cartão",
+        "analyzed": "Analisadas",
+        "notanalyzed": "Não analisadas",
+        "error": "Erro",
+        "manually": "Executada manualmente",
+        "new": "Nova",
+        "pending": "Pendente",
+        "processed": "Processada"
+    },
+    "calendarAbbrdays": {
+        "1": "Do",
+        "2": "Se",
+        "3": "Te",
+        "4": "Qu",
+        "5": "Qu",
+        "6": "Se",
+        "7": "Sa"
+    },
+    "calendarMonths": {
+        "1": "Janeiro",
+        "2": "Fevereiro",
+        "3": "Março",
+        "4": "Abril",
+        "5": "Maio",
+        "6": "Junho",
+        "7": "Julho",
+        "8": "Agosto",
+        "9": "Setembro",
+        "10": "Outubro",
+        "11": "Novembro",
+        "12": "Dezembro"
+    },
+    "calendarButtons": {
+        "cancelLabel": "Cancelar",
+        "applyLabel": "Aplicar"
+    },
+    "status": {
+        "1": "sim",
+        "0": "não"
+    },
+    "filter": {
+        "btnCollapseShow": "Mostrar filtro",
+        "btnCollapseHide": "Ocultar filtro"
+    },
+
+    "calendarTime": {
+        "applyLabel": "Confirmar",
+        "cancelLabel": "Cancelar"
+    }
+}

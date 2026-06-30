@@ -1,0 +1,135 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+model not_excepcao {
+  id_excepcao          Int                   @id(map: "PK__not_exce__B66DB5D9F0522174")
+  id_tipo_notificacao  Int?
+  email_destinatario   String?               @db.NVarChar(255)
+  not_tipo_notificacao not_tipo_notificacao? @relation(fields: [id_tipo_notificacao], references: [id_tipo_notificacao], onDelete: NoAction, onUpdate: NoAction, map: "FK__not_excep__id_ti__4316F928")
+}
+
+model not_notificacao {
+  id_notificacao       Int                   @id(map: "PK__not_noti__D5204769B52F7942") @default(autoincrement())
+  data_criacao         DateTime?             @db.DateTime
+  data_envio           DateTime?             @db.DateTime
+  email_destinatario   String?               @db.NVarChar(4000)
+  assunto              String?               @db.NVarChar(Max)
+  mensagem             String?               @db.NVarChar(Max)
+  id_tipo_notificacao  Int?
+  estado               Int?
+  periodicidade        String?               @db.NVarChar(255)
+  identificador_chave  String?               @db.NVarChar(255)
+  not_tipo_notificacao not_tipo_notificacao? @relation(fields: [id_tipo_notificacao], references: [id_tipo_notificacao], onDelete: NoAction, onUpdate: NoAction, map: "FK__not_notif__id_ti__44FF419A")
+}
+
+model not_regra {
+  id_regra             Int                   @id(map: "PK__not_regr__46D174CE52E947F9")
+  activa               Boolean
+  tabela_base          String?               @db.NVarChar(255)
+  trg                  String?               @db.NVarChar(255)
+  periodicidade        String?               @db.NVarChar(255)
+  assunto              String?               @db.NVarChar(4000)
+  mensagem             String?               @db.NVarChar(4000)
+  descricao_regra      String?               @db.NVarChar(4000)
+  id_tipo_notificacao  Int?
+  not_tipo_notificacao not_tipo_notificacao? @relation(fields: [id_tipo_notificacao], references: [id_tipo_notificacao], onDelete: NoAction, onUpdate: NoAction, map: "FK__not_regra__id_ti__748F2482")
+}
+
+model not_tipo_notificacao {
+  id_tipo_notificacao Int               @id(map: "PK__not_tipo__F92D44CE97EE5644")
+  descricao           String?           @db.NVarChar(255)
+  not_excepcao        not_excepcao[]
+  not_notificacao     not_notificacao[]
+  not_regra           not_regra[]
+}
+
+model TipoFormacao {
+  id         Int        @id(map: "PK__TIPO_FOR__3213E83F6EA34EA7") @default(autoincrement())
+  designacao String     @db.NVarChar(250)
+  ativo      Boolean    @default(true, map: "DF__TIPO_FORM__ativo__5441852A")
+  criadoEm   DateTime   @default(now(), map: "DF__TIPO_FORM__criad__5535A963") @map("criado_em") @db.DateTime
+  FORMACAO   FORMACAO[]
+
+  @@map("TIPO_FORMACAO")
+}
+
+model FICHEIRO {
+  id                    Int            @id(map: "PK__FICHEIRO__3213E83FFCB4C52A") @default(autoincrement())
+  nome_original         String         @db.NVarChar(400)
+  mime_type             String         @db.NVarChar(100)
+  tamanho_bytes         Int
+  caminho_armazenamento String         @db.NVarChar(400)
+  criado_em             DateTime       @default(now(), map: "DF__FICHEIRO__criado__5FB337D6") @db.DateTime
+  PARTICIPACAO          PARTICIPACAO[]
+  FORMACAO_CERTIFICADO  FORMACAO[]     @relation("FORMACAO_CERTIFICADO")
+}
+
+model FORMACAO {
+  id                 Int            @id(map: "PK__FORMACAO__3213E83FEA91B6C2") @default(autoincrement())
+  designacao         String         @db.NVarChar(250)
+  tipo_formacao_id   Int
+  objetivos          String?
+  n_horas            Int?
+  data_inicio        DateTime?      @db.Date
+  data_fim           DateTime?      @db.Date
+  local              String?        @db.NVarChar(250)
+  certificado_ficheiro_id Int?
+  certificado_automatico Boolean    @default(false)
+  certificado_logotipos String?     @db.NVarChar(Max)
+  certificado_titulo String?        @db.NVarChar(250)
+  certificado_descricao String?     @db.NVarChar(Max)
+  certificado_config String?        @db.NVarChar(Max)
+  criado_por_user_id Int?
+  criado_em          DateTime       @default(now(), map: "DF__FORMACAO__criado__628FA481") @db.DateTime
+  UTILIZADOR         UTILIZADOR?    @relation(fields: [criado_por_user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "FK__FORMACAO__criado__6477ECF3")
+  TIPO_FORMACAO      TipoFormacao   @relation(fields: [tipo_formacao_id], references: [id], onUpdate: NoAction, map: "FK__FORMACAO__tipo_f__6383C8BA")
+  CERTIFICADO_FICHEIRO FICHEIRO?    @relation("FORMACAO_CERTIFICADO", fields: [certificado_ficheiro_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  PARTICIPACAO       PARTICIPACAO[]
+}
+
+model PARTICIPACAO {
+  id                                                       Int             @id(map: "PK__PARTICIP__3213E83F342A46FA") @default(autoincrement())
+  formacao_id                                              Int
+  user_id                                                  Int
+  comprovativo_ficheiro_id                                 Int?
+  estado                                                   String          @db.NVarChar(50)
+  observacao_validacao                                     String?         @db.NVarChar(400)
+  validado_por_user_id                                     Int?
+  data_validacao                                           DateTime?       @db.DateTime
+  criado_em                                                DateTime        @default(now(), map: "DF__PARTICIPA__criad__6754599E") @db.DateTime
+  FICHEIRO                                                 FICHEIRO?       @relation(fields: [comprovativo_ficheiro_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "FK__PARTICIPA__compr__6A30C649")
+  FORMACAO                                                 FORMACAO        @relation(fields: [formacao_id], references: [id], onUpdate: NoAction, map: "FK__PARTICIPA__forma__68487DD7")
+  UTILIZADOR_PARTICIPACAO_user_idToUTILIZADOR              UTILIZADOR      @relation("PARTICIPACAO_user_idToUTILIZADOR", fields: [user_id], references: [id], onUpdate: NoAction, map: "FK__PARTICIPA__user___693CA210")
+  UTILIZADOR_PARTICIPACAO_validado_por_user_idToUTILIZADOR UTILIZADOR?     @relation("PARTICIPACAO_validado_por_user_idToUTILIZADOR", fields: [validado_por_user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "FK__PARTICIPA__valid__6B24EA82")
+  VALIDACAO_LOG                                            VALIDACAO_LOG[]
+}
+
+model UTILIZADOR {
+  id                                                         Int             @id(map: "PK__UTILIZAD__3213E83F5F22A745") @default(autoincrement())
+  username                                                   String          @db.NVarChar(100)
+  nome                                                       String          @db.NVarChar(250)
+  email                                                      String          @db.NVarChar(400)
+  uo                                                         String?         @db.NVarChar(100)
+  ativo                                                      Boolean         @default(true, map: "DF__UTILIZADO__ativo__5CD6CB2B")
+  FORMACAO                                                   FORMACAO[]
+  PARTICIPACAO_PARTICIPACAO_user_idToUTILIZADOR              PARTICIPACAO[]  @relation("PARTICIPACAO_user_idToUTILIZADOR")
+  PARTICIPACAO_PARTICIPACAO_validado_por_user_idToUTILIZADOR PARTICIPACAO[]  @relation("PARTICIPACAO_validado_por_user_idToUTILIZADOR")
+  VALIDACAO_LOG                                              VALIDACAO_LOG[]
+}
+
+model VALIDACAO_LOG {
+  id                Int          @id(map: "PK__VALIDACA__3213E83FC09313B9") @default(autoincrement())
+  participacao_id   Int
+  acao              String       @db.NVarChar(50)
+  feito_por_user_id Int
+  observacao        String?      @db.NVarChar(400)
+  criado_em         DateTime     @default(now(), map: "DF__VALIDACAO__criad__6E01572D") @db.DateTime
+  UTILIZADOR        UTILIZADOR   @relation(fields: [feito_por_user_id], references: [id], onUpdate: NoAction, map: "FK__VALIDACAO__feito__6FE99F9F")
+  PARTICIPACAO      PARTICIPACAO @relation(fields: [participacao_id], references: [id], onUpdate: NoAction, map: "FK__VALIDACAO__parti__6EF57B66")
+}

@@ -1,0 +1,9 @@
+{
+    "dropdown": {
+        "titulo": "Utilizador",
+        "passwchange": "Palavra-passe",
+        "pinchange": "PIN",
+        "terminarsessao": "Terminar Sessão",
+        "menuvoltar": "Voltar ao menu principal"
+    }
+}

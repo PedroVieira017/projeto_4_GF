@@ -1,0 +1,25 @@
+{
+    "exemplos_editoras": {
+        "titulo_pagina": "Listagem Editoras",
+        "objeto": "Listagem Editoras",
+        "modulo": "Módulo Exemplos",
+        "a_carregar": "A carregar...",
+        "erro_carregar": "Erro a carregar a lista de editoras",
+        "sem_dados": "Sem dados",
+        "nova": "Nova Editora",
+        "tbl": {
+            "id": "ID",
+            "designacao": "Designação",
+            "nif": "NIF",
+            "eliminar": "Eliminar",
+            "detalhe": "Detalhe"
+        },
+        "toastr": {
+            "sucesso": "Sucesso",
+            "erro": "Erro",
+            "form_sucesso": "Eliminado com sucesso",
+            "form_erro": "Erro a eliminar"
+        }
+    }
+    
+}
